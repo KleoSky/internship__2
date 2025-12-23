@@ -1,0 +1,331 @@
+.faq {
+  width: 100%;
+  background-color: var(--bg-base, #f0efe9);
+}
+
+.faq__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px;
+  color: var(--bg-accent, #000080);
+  box-sizing: border-box;
+}
+
+.faq__title {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.faq__list {
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.faq__item {
+  padding: 0 17px 0 15px;
+  border: 2px solid var(--bg-accent, #000080);
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 187px 40px;
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 28px;
+  position: relative;
+
+  &--current {
+    color: var(--color-second, #ffffff);
+    background-color: var(--bg-accent, #000080);
+  }
+}
+
+.faq__item--current p {
+  width: 251px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.faq__item:not(.faq__item--current) {
+  margin-bottom: 0;
+}
+
+.faq__item:nth-child(2) .faq__item-title {
+  width: 121px;
+  margin-bottom: 21px;
+}
+
+.faq__item:nth-child(4) .faq__item-title,
+.faq__item:nth-child(5) .faq__item-title {
+  margin-top: 21px;
+  margin-bottom: 19px;
+}
+
+.faq__item-title {
+  font-size: 16px;
+  line-height: 1.12;
+  font-weight: 400;
+  margin: 24px 0 20px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.faq__item p {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.faq__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  position: relative;
+  background-color: var(--bg-accent, #000080);
+  border: 1px solid var(--bg-accent, #000080);
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0.1deg);
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &::before {
+    width: 18px;
+    height: 1px;
+  }
+
+  &::after {
+    width: 1px;
+    height: 18px;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--bg-second, #ffffff);
+    border: 1px solid var(--bg-accent, #000080);
+  }
+
+  &:hover:not(:disabled)::before,
+  &:hover:not(:disabled)::after {
+    background-color: var(--bg-accent, #000080);
+  }
+
+  &:active:not(:disabled):not(.faq__button--current) {
+    background-color: #275699;
+    border: 1px solid #275699;
+  }
+
+  &:active:not(:disabled):not(.faq__button--current)::before,
+  &:active:not(:disabled):not(.faq__button--current)::after {
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &:focus:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &:focus:not(:disabled)::before,
+  &:focus:not(:disabled)::after,
+  &:focus-visible:not(:disabled)::before,
+  &:focus-visible:not(:disabled)::after {
+    background-color: var(--bg-accent, #000080);
+  }
+
+  &:disabled {
+    background-color: var(--bg-button-dis, #a9afb7);
+    border: 1px solid var(--bg-button-dis, #a9afb7);
+    cursor: default;
+  }
+
+  &:disabled::before,
+  &:disabled::after {
+    background-color: var(--bg-second, #ffffff);
+  }
+}
+
+.faq__button--current {
+  background-color: var(--bg-second, #ffffff);
+
+  &::before {
+    background-color: var(--bg-accent, #000080);
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    background-color: var(--bg-base, #f0efe9);
+    border: 1px solid var(--color-second, #ffffff);
+  }
+
+  &:hover:not(:disabled)::before,
+  &:focus:not(:disabled)::before,
+  &:focus-visible:not(:disabled)::before {
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--color-second, #ffffff);
+    border: 1px solid var(--color-second, #ffffff);
+  }
+
+  &:active:not(:disabled)::before {
+    background-color: #275699;
+  }
+
+  &:disabled {
+    background-color: var(--bg-button-dis, #a9afb7);
+    border: 1px solid var(--bg-button-dis, #a9afb7);
+  }
+
+  &:disabled::before {
+    background-color: var(--bg-second, #ffffff);
+  }
+}
+
+@media (width >= 768px) {
+  .faq__wrapper {
+    width: 768px;
+    padding: 50px 45px;
+  }
+
+  .faq__title {
+    font-size: 34px;
+    line-height: 1.47;
+    margin-bottom: 40px;
+  }
+
+  .faq__list {
+    width: 678px;
+  }
+
+  .faq__item {
+    grid-template-columns: 540px 40px;
+    column-gap: 33px;
+    padding: 0 30px;
+  }
+
+  .faq__item-title {
+    font-size: 22px;
+    line-height: 1.18;
+    margin: 38px 0 36px;
+  }
+
+  .faq__item:nth-child(2) .faq__item-title {
+    width: 540px;
+    margin-bottom: 36px;
+  }
+
+  .faq__item--current .faq__item-title {
+    margin-bottom: 26px;
+  }
+
+
+  .faq__item:nth-child(4) .faq__item-title,
+  .faq__item:nth-child(5) .faq__item-title {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .faq__item:nth-child(4) .faq__item-title {
+    width: 410px;
+    margin-bottom: 29px;
+  }
+
+  .faq__item:nth-child(5) .faq__item-title {
+    width: 460px;
+  }
+
+  .faq__item p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .faq__item--current p {
+    width: 614px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (width >= 1440px) {
+  .faq__wrapper {
+    width: 1440px;
+    padding: 71px 206px 60px;
+  }
+
+  .faq__title {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 71px;
+  }
+
+  .faq__list {
+    width: 1028px;
+  }
+
+  .faq__item {
+    grid-template-columns: 866px 40px;
+    column-gap: 36px;
+    padding: 0 42px 0 40px;
+  }
+
+  .faq__item-title {
+    font-size: 28px;
+    line-height: 1.21;
+    margin: 44px 0 42px;
+  }
+
+  .faq__item:nth-child(2) .faq__item-title {
+    width: 800px;
+    margin-bottom: 42px;
+  }
+
+  .faq__item--current .faq__item-title {
+    margin-bottom: 23px;
+  }
+
+
+  .faq__item:nth-child(4) .faq__item-title,
+  .faq__item:nth-child(5) .faq__item-title {
+    width: 800px;
+    margin-top: 41px;
+    margin-bottom: 40px;
+  }
+
+  .faq__item:nth-child(4) .faq__item-title {
+    margin-bottom: 40px;
+  }
+
+  .faq__item--current p {
+    width: 914px;
+    padding-bottom: 20px;
+  }
+
+  .faq__item p {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}

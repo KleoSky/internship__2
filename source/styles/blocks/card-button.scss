@@ -1,0 +1,38 @@
+.card-button {
+  width: 30px;
+  height: 30px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: var(--bg-accent, #000080);
+  position: absolute;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    background-color: var(--bg-second, #ffffff);
+    position: absolute;
+    transform: translateY(-50%);
+    mask: url("/__spritemap#sprite-arrow-45deg-icon-view") center / 7px 7px no-repeat;
+  }
+
+  &:hover:not(:disabled)::after {
+    background-color: var(--bg-accent, #000080);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &:active:not(:disabled)::after {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus:not(:disabled)::after,
+  &:focus-visible:not(:disabled)::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+}

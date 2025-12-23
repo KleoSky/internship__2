@@ -1,0 +1,15 @@
+.body-overlay {
+  overflow: hidden;
+}
+
+.body-overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: var(--overlay-page, rgba(13, 29, 51, 0.4));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

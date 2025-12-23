@@ -1,0 +1,22 @@
+.button-close {
+  position: absolute;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  mask: url("/__spritemap#sprite-cross-icon-view") center / 16px 16px no-repeat;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:disabled {
+    background-color: var(--bg-button-dis, #484848);
+    cursor: default;
+  }
+}

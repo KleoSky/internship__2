@@ -1,0 +1,103 @@
+.main-button {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  color: var(--bg-accent, #000080);
+  background-color: transparent;
+  border: 1px solid var(--bg-accent, #000080);
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    display: block;
+    background-color: var(--bg-accent, #000080);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    background-color: var(--bg-second, #ffffff);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    mask: url("/__spritemap#sprite-arrow-45deg-icon-view") center / 7px 7px no-repeat;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--bg-accent, #000080);
+    color: var(--color-second, #ffffff);
+  }
+
+  &:hover:not(:disabled)::before {
+    background-color: var(--bg-second, #ffffff);
+  }
+
+  &:hover:not(:disabled)::after {
+    background-color: var(--bg-accent, #000080);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:active:not(:disabled) {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:active:not(:disabled)::after {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus:not(:disabled)::after,
+  &:focus-visible:not(:disabled)::after {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:disabled {
+    border: 1px solid var(--bg-button-dis, #a9afb7);
+    color: var(--bg-button-dis, #a9afb7);
+  }
+
+  &:disabled::before {
+    background-color: var(--bg-button-dis, #a9afb7);
+  }
+
+  &:disabled::after {
+    background-color: var(--bg-second, #ffffff);
+  }
+}
+
+@media (width >= 768px) {
+  .main-button {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
+
+@media (width >= 1440px) {
+  .main-button {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    margin-top: -20px;
+    padding: 22px 82px 22px 31px;
+  }
+}

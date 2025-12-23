@@ -1,0 +1,225 @@
+.programs {
+  width: 100%;
+}
+
+.programs__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 52px 15px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.programs__title {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--bg-accent, #000080);
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 34px;
+}
+
+.programs__buttons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  position: absolute;
+  top: 53px;
+  left: 253px;
+}
+
+.programs__button {
+  width: 22px;
+  height: 22px;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: var(--bg-accent, #000080);
+  }
+
+  &--prev::before {
+    mask: url("/__spritemap#sprite-arrow-left-icon-view") center / 10px 10px no-repeat;
+  }
+
+  &--next::before {
+    mask: url("/__spritemap#sprite-arrow-right-icon-view") center / 10px 10px no-repeat;
+  }
+
+  &:hover:not(:disabled)::before,
+  &:focus:not(:disabled)::before {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:disabled::before {
+    background-color: var(--bg-button-dis, #484848);
+    cursor: default;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 28px;
+  overflow: visible;
+}
+
+.programs .program-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10px min-content 10px;
+  grid-template-rows: 271px min-content 18px;
+}
+
+.programs__link {
+  width: 205px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 1px;
+  padding: 15px 66px 15px 31px;
+  box-sizing: border-box;
+  background-color: var(--bg-base, #f0efe9);
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+
+  &::before {
+    left: 165px;
+  }
+
+  &::after {
+    left: 178px;
+  }
+
+  // Добавить класс .programs__link--disabled для отключения доступности
+  &--disabled {
+    border: 1px solid var(--bg-button-dis, #a9afb7);
+    color: var(--bg-button-dis, #a9afb7);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &--disabled::before {
+    background-color: var(--bg-button-dis, #a9afb7);
+  }
+
+  &--disabled::after {
+    background-color: var(--bg-second, #ffffff);
+  }
+}
+
+@media (width >= 768px) {
+  .programs__wrapper {
+    width: 768px;
+    padding: 52px 0 60px 45px;
+  }
+
+  .programs__title {
+    font-size: 34px;
+    line-height: 1.47;
+    color: var(--bg-accent, #000080);
+    margin-top: 1px;
+    margin-bottom: 44px;
+    position: relative;
+  }
+
+  .programs__buttons-wrapper {
+    gap: 10px;
+    top: 607px;
+    left: 87%;
+  }
+
+  .programs__list {
+    margin-bottom: 49px;
+  }
+
+  .programs__scrollbar {
+    width: 562px;
+    height: 2px;
+    background-color: rgba(49, 109, 194, 0.2);
+    position: relative;
+    cursor: pointer;
+  }
+
+  .programs__scrollbar .swiper-scrollbar-drag {
+    height: 2px;
+    background-color: var(--bg-accent, #000080);
+  }
+
+  .programs .program-card {
+    grid-template-columns: 20px min-content 20px;
+    grid-template-rows: 285px min-content 10px;
+  }
+
+  .programs__link {
+    width: 234px;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    margin-top: 1px;
+    padding: 20px 77px 20px 30px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: absolute;
+    top: 49px;
+    left: 63.7%;
+
+    &::before {
+      left: 182px;
+    }
+
+    &::after {
+      left: 201px;
+    }
+  }
+}
+
+@media (width >= 1440px) {
+  .programs__wrapper {
+    width: 1440px;
+    padding: 60px 100px;
+  }
+
+  .programs__title {
+    font-size: 50px;
+    line-height: 1;
+    margin-top: 4px;
+    margin-bottom: 46px;
+  }
+
+  .programs__buttons-wrapper {
+    top: 619px;
+    left: 89.5%;
+  }
+
+  .programs__list .programs__item {
+    grid-template-columns: 20px min-content 51px;
+    grid-template-rows: 280px min-content 17px;
+    margin-right: 10px;
+  }
+
+  .programs__list .programs__item:last-child {
+    margin-right: 0;
+  }
+
+  .programs__scrollbar {
+    width: 1136px;
+  }
+
+  .programs__link {
+    top: 61px;
+    left: 76.8%;
+  }
+}
