@@ -62,7 +62,7 @@
     display: block;
     background-color: var(--bg-second, #ffffff);
     position: relative;
-    mask: url("/__spritemap#sprite-corner-icon-view") center / 8px 10px no-repeat;
+    mask: url("/icons/stack.svg#corner-icon") center / 8px 10px no-repeat;
     top: -1px;
     left: 253px;
   }
@@ -83,7 +83,7 @@
     display: block;
     background-color: var(--bg-second, #ffffff);
     position: relative;
-    mask: url("/__spritemap#sprite-corner-icon-view") center / 10px 10px no-repeat;
+    mask: url("/icons/stack.svg#corner-icon") center / 10px 10px no-repeat;
     top: 0;
     left: 168px;
   }
@@ -145,7 +145,7 @@
     &::before {
       width: 26px;
       height: 26px;
-      mask: url("/__spritemap#sprite-corner-icon-view") center / 26px 26px no-repeat;
+      mask: url("/icons/stack.svg#corner-icon") center / 26px 26px no-repeat;
       top: 1px;
       left: 239px;
     }

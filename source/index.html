@@ -9,11 +9,12 @@
   <link rel="preload" href="fonts/manrope/manrope-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/manrope/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/manrope/manrope-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="scripts/main.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" sizes="32x32" href="public/32.png" type="image/png">
-  <link rel="icon" href="public/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="public/apple.png">
+  <link rel="icon" sizes="32x32" href="favicons/32.png" type="image/png">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -23,7 +24,7 @@
       <div class="header__main">
         <div class="header__logo-wrapper">
           <svg width="30" height="30">
-            <use href="@__spritemap#sprite-logo"></use>
+            <use href="icons/stack.svg#logo"></use>
           </svg>
         </div>
         <nav class="header__nav nav">
@@ -77,16 +78,16 @@
               <div class="hero-card__picture">
                 <picture>
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp"
-                    srcset="img/hero-img-desktop-1@1x.webp 1x, img/hero-img-desktop-1@2x.webp 2x">
+                    srcset="images/hero-img-desktop-1@1x.webp 1x, images/hero-img-desktop-1@2x.webp 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/webp"
-                    srcset="img/hero-img-tablet-1@1x.webp 1x, img/hero-img-tablet-1@2x.webp 2x">
+                    srcset="images/hero-img-tablet-1@1x.webp 1x, images/hero-img-tablet-1@2x.webp 2x">
                   <source width="320" height="568" type="image/webp"
-                    srcset="img/hero-img-mobile-1@1x.webp 1x, img/hero-img-mobile-1@2x.webp 2x">
+                    srcset="images/hero-img-mobile-1@1x.webp 1x, images/hero-img-mobile-1@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpeg"
-                    srcset="img/hero-img-desktop-1@1x.jpg 1x, img/hero-img-desktop-1@2x.jpg 2x">
+                    srcset="images/hero-img-desktop-1@1x.jpg 1x, images/hero-img-desktop-1@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/jpeg"
-                    srcset="img/hero-img-tablet-1@1x.jpg 1x, img/hero-img-tablet-1@2x.jpg 2x">
-                  <img src="img/hero-img-mobile-1@1x.jpg" srcset="img/hero-img-mobile-1@2x.jpg 2x" width="320"
+                    srcset="images/hero-img-tablet-1@1x.jpg 1x, images/hero-img-tablet-1@2x.jpg 2x">
+                  <img src="images/hero-img-mobile-1@1x.jpg" srcset="images/hero-img-mobile-1@2x.jpg 2x" width="320"
                     height="568" alt="Кудрявая студентка в очках">
                 </picture>
               </div>
@@ -103,16 +104,16 @@
               <div class="hero-card__picture">
                 <picture>
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp"
-                    srcset="img/hero-img-desktop-2@1x.webp 1x, img/hero-img-desktop-2@2x.webp 2x">
+                    srcset="images/hero-img-desktop-2@1x.webp 1x, images/hero-img-desktop-2@2x.webp 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/webp"
-                    srcset="img/hero-img-tablet-2@1x.webp 1x, img/hero-img-tablet-2@2x.webp 2x">
+                    srcset="images/hero-img-tablet-2@1x.webp 1x, images/hero-img-tablet-2@2x.webp 2x">
                   <source width="320" height="568" type="image/webp"
-                    srcset="img/hero-img-mobile-2@1x.webp 1x, img/hero-img-mobile-2@2x.webp 2x">
+                    srcset="images/hero-img-mobile-2@1x.webp 1x, images/hero-img-mobile-2@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpeg"
-                    srcset="img/hero-img-desktop-2@1x.jpg 1x, img/hero-img-desktop-2@2x.jpg 2x">
+                    srcset="images/hero-img-desktop-2@1x.jpg 1x, images/hero-img-desktop-2@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/jpeg"
-                    srcset="img/hero-img-tablet-2@1x.jpg 1x, img/hero-img-tablet-2@2x.jpg 2x">
-                  <img src="img/hero-img-mobile-2@1x.jpg" srcset="img/hero-img-mobile-2@2x.jpg 2x" width="320"
+                    srcset="images/hero-img-tablet-2@1x.jpg 1x, images/hero-img-tablet-2@2x.jpg 2x">
+                  <img src="images/hero-img-mobile-2@1x.jpg" srcset="images/hero-img-mobile-2@2x.jpg 2x" width="320"
                     height="568" alt="Гуппа волонтёров разной национальности">
                 </picture>
               </div>
@@ -129,16 +130,16 @@
               <div class="hero-card__picture">
                 <picture>
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp"
-                    srcset="img/hero-img-desktop-3@1x.webp 1x, img/hero-img-desktop-3@2x.webp 2x">
+                    srcset="images/hero-img-desktop-3@1x.webp 1x, images/hero-img-desktop-3@2x.webp 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/webp"
-                    srcset="img/hero-img-tablet-3@1x.webp 1x, img/hero-img-tablet-3@2x.webp 2x">
+                    srcset="images/hero-img-tablet-3@1x.webp 1x, images/hero-img-tablet-3@2x.webp 2x">
                   <source width="320" height="568" type="image/webp"
-                    srcset="img/hero-img-mobile-3@1x.webp 1x, img/hero-img-mobile-3@2x.webp 2x">
+                    srcset="images/hero-img-mobile-3@1x.webp 1x, images/hero-img-mobile-3@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpeg"
-                    srcset="img/hero-img-desktop-3@1x.jpg 1x, img/hero-img-desktop-3@2x.jpg 2x">
+                    srcset="images/hero-img-desktop-3@1x.jpg 1x, images/hero-img-desktop-3@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="768" height="1024" type="image/jpeg"
-                    srcset="img/hero-img-tablet-3@1x.jpg 1x, img/hero-img-tablet-3@2x.jpg 2x">
-                  <img src="img/hero-img-mobile-3@1x.jpg" srcset="img/hero-img-mobile-3@2x.jpg 2x" width="320"
+                    srcset="images/hero-img-tablet-3@1x.jpg 1x, images/hero-img-tablet-3@2x.jpg 2x">
+                  <img src="images/hero-img-mobile-3@1x.jpg" srcset="images/hero-img-mobile-3@2x.jpg 2x" width="320"
                     height="568" alt="Мжчина и две женщины обсуждают проект за офисным столом">
                 </picture>
               </div>
@@ -228,16 +229,16 @@
                 <div class="program-card__picture">
                   <picture>
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/webp"
-                      srcset="img/programs-img-desktop-1@1x.webp 1x, img/programs-img-desktop-1@2x.webp 2x">
+                      srcset="images/programs-img-desktop-1@1x.webp 1x, images/programs-img-desktop-1@2x.webp 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/webp"
-                      srcset="img/programs-img-tablet-1@1x.webp 1x, img/programs-img-tablet-1@2x.webp 2x">
+                      srcset="images/programs-img-tablet-1@1x.webp 1x, images/programs-img-tablet-1@2x.webp 2x">
                     <source width="290" height="400" type="image/webp"
-                      srcset="img/programs-img-mobile-1@1x.webp 1x, img/programs-img-mobile-1@2x.webp 2x">
+                      srcset="images/programs-img-mobile-1@1x.webp 1x, images/programs-img-mobile-1@2x.webp 2x">
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/jpeg"
-                      srcset="img/programs-img-desktop-1@1x.jpg 1x, img/programs-img-desktop-1@2x.jpg 2x">
+                      srcset="images/programs-img-desktop-1@1x.jpg 1x, images/programs-img-desktop-1@2x.jpg 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/jpeg"
-                      srcset="img/programs-img-tablet-1@1x.jpg 1x, img/programs-img-tablet-1@2x.jpg 2x">
-                    <img src="img/programs-img-mobile-1@1x.jpg" srcset="img/programs-img-mobile-1@2x.jpg 2x" width="290"
+                      srcset="images/programs-img-tablet-1@1x.jpg 1x, images/programs-img-tablet-1@2x.jpg 2x">
+                    <img src="images/programs-img-mobile-1@1x.jpg" srcset="images/programs-img-mobile-1@2x.jpg 2x" width="290"
                       height="400" alt="Две девушки за просмотром планшетки с обучающей программой">
                   </picture>
                 </div>
@@ -255,16 +256,16 @@
                 <div class="program-card__picture">
                   <picture>
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/webp"
-                      srcset="img/programs-img-desktop-2@1x.webp 1x, img/programs-img-desktop-2@2x.webp 2x">
+                      srcset="images/programs-img-desktop-2@1x.webp 1x, images/programs-img-desktop-2@2x.webp 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/webp"
-                      srcset="img/programs-img-tablet-2@1x.webp 1x, img/programs-img-tablet-2@2x.webp 2x">
+                      srcset="images/programs-img-tablet-2@1x.webp 1x, images/programs-img-tablet-2@2x.webp 2x">
                     <source width="290" height="400" type="image/webp"
-                      srcset="img/programs-img-mobile-2@1x.webp 1x, img/programs-img-mobile-2@2x.webp 2x">
+                      srcset="images/programs-img-mobile-2@1x.webp 1x, images/programs-img-mobile-2@2x.webp 2x">
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/jpeg"
-                      srcset="img/programs-img-desktop-2@1x.jpg 1x, img/programs-img-desktop-2@2x.jpg 2x">
+                      srcset="images/programs-img-desktop-2@1x.jpg 1x, images/programs-img-desktop-2@2x.jpg 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/jpeg"
-                      srcset="img/programs-img-tablet-2@1x.jpg 1x, img/programs-img-tablet-2@2x.jpg 2x">
-                    <img src="img/programs-img-mobile-2@1x.jpg" srcset="img/programs-img-mobile-2@2x.jpg 2x" width="290"
+                      srcset="images/programs-img-tablet-2@1x.jpg 1x, images/programs-img-tablet-2@2x.jpg 2x">
+                    <img src="images/programs-img-mobile-2@1x.jpg" srcset="images/programs-img-mobile-2@2x.jpg 2x" width="290"
                       height="400" alt="Смуглый парень в футболке с надписью Волонтёр">
                   </picture>
                 </div>
@@ -282,16 +283,16 @@
                 <div class="program-card__picture">
                   <picture>
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/webp"
-                      srcset="img/programs-img-desktop-3@1x.webp 1x, img/programs-img-desktop-3@2x.webp 2x">
+                      srcset="images/programs-img-desktop-3@1x.webp 1x, images/programs-img-desktop-3@2x.webp 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/webp"
-                      srcset="img/programs-img-tablet-3@1x.webp 1x, img/programs-img-tablet-3@2x.webp 2x">
+                      srcset="images/programs-img-tablet-3@1x.webp 1x, images/programs-img-tablet-3@2x.webp 2x">
                     <source width="290" height="400" type="image/webp"
-                      srcset="img/programs-img-mobile-3@1x.webp 1x, img/programs-img-mobile-3@2x.webp 2x">
+                      srcset="images/programs-img-mobile-3@1x.webp 1x, images/programs-img-mobile-3@2x.webp 2x">
                     <source media="(min-width: 1440px)" width="392" height="420" type="image/jpeg"
-                      srcset="img/programs-img-desktop-3@1x.jpg 1x, img/programs-img-desktop-3@2x.jpg 2x">
+                      srcset="images/programs-img-desktop-3@1x.jpg 1x, images/programs-img-desktop-3@2x.jpg 2x">
                     <source media="(min-width: 768px)" width="324" height="420" type="image/jpeg"
-                      srcset="img/programs-img-tablet-3@1x.jpg 1x, img/programs-img-tablet-3@2x.jpg 2x">
-                    <img src="img/programs-img-mobile-3@1x.jpg" srcset="img/programs-img-mobile-3@2x.jpg 2x" width="290"
+                      srcset="images/programs-img-tablet-3@1x.jpg 1x, images/programs-img-tablet-3@2x.jpg 2x">
+                    <img src="images/programs-img-mobile-3@1x.jpg" srcset="images/programs-img-mobile-3@2x.jpg 2x" width="290"
                       height="400" alt="Студент в очках учится за столом, обложившись книгами">
                   </picture>
                 </div>
@@ -321,16 +322,16 @@
           <div class="grant__picture">
             <picture>
               <source media="(min-width: 1440px)" width="498" height="363" type="image/webp"
-                srcset="img/grant-img-desktop@1x.webp 1x, img/grant-img-desktop@2x.webp 2x">
+                srcset="images/grant-img-desktop@1x.webp 1x, images/grant-img-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="678" height="375" type="image/webp"
-                srcset="img/grant-img-tablet@1x.webp 1x, img/grant-img-tablet@2x.webp 2x">
+                srcset="images/grant-img-tablet@1x.webp 1x, images/grant-img-tablet@2x.webp 2x">
               <source width="290" height="200" type="image/webp"
-                srcset="img/grant-img-mobile@1x.webp 1x, img/grant-img-mobile@2x.webp 2x">
+                srcset="images/grant-img-mobile@1x.webp 1x, images/grant-img-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" width="498" height="363" type="image/jpeg"
-                srcset="img/grant-img-desktop@1x.jpg 1x, img/grant-img-desktop@2x.jpg 2x">
+                srcset="images/grant-img-desktop@1x.jpg 1x, images/grant-img-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="678" height="375" type="image/jpeg"
-                srcset="img/grant-img-tablet@1x.jpg 1x, img/grant-img-tablet@2x.jpg 2x">
-              <img src="img/grant-img-mobile@1x.jpg" srcset="img/grant-img-mobile@2x.jpg 2x" width="290" height="200"
+                srcset="images/grant-img-tablet@1x.jpg 1x, images/grant-img-tablet@2x.jpg 2x">
+              <img src="images/grant-img-mobile@1x.jpg" srcset="images/grant-img-mobile@2x.jpg 2x" width="290" height="200"
                 alt="Столб с указателями в виде цветных стрелок с названиями стран">
             </picture>
           </div>
@@ -376,26 +377,26 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-1@1x.webp 1x, img/news-img-desktop-1@2x.webp 2x">
+                          srcset="images/news-img-desktop-1@1x.webp 1x, images/news-img-desktop-1@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-1@1x.webp 1x, img/news-img-tablet-1@2x.webp 2x">
+                          srcset="images/news-img-tablet-1@1x.webp 1x, images/news-img-tablet-1@2x.webp 2x">
                         <source width="290" height="330" type="image/webp"
-                          srcset="img/news-img-mobile-1@1x.webp 1x, img/news-img-mobile-1@2x.webp 2x">
+                          srcset="images/news-img-mobile-1@1x.webp 1x, images/news-img-mobile-1@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-1@1x.jpg 1x, img/news-img-desktop-1@2x.jpg 2x">
+                          srcset="images/news-img-desktop-1@1x.jpg 1x, images/news-img-desktop-1@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-1@1x.jpg 1x, img/news-img-tablet-1@2x.jpg 2x">
-                        <img src="img/news-img-mobile-1@1x.jpg" srcset="img/news-img-mobile-1@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-1@1x.jpg 1x, images/news-img-tablet-1@2x.jpg 2x">
+                        <img src="images/news-img-mobile-1@1x.jpg" srcset="images/news-img-mobile-1@2x.jpg 2x" width="290"
                           height="330" alt="Студентка даёт интервью">
                       </picture>
                     </div>
                     <div class="news__picture-big">
                       <picture>
                         <source media="(min-width: 1440px)" width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
                         <source width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
-                        <img src="img/news-img-big-1@1x.jpg" srcset="img/news-img-big-1@2x.jpg 2x" width="604"
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
+                        <img src="images/news-img-big-1@1x.jpg" srcset="images/news-img-big-1@2x.jpg 2x" width="604"
                           height="400" alt="Студентка даёт интервью">
                       </picture>
                     </div>
@@ -415,16 +416,16 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-2@1x.webp 1x, img/news-img-desktop-2@2x.webp 2x">
+                          srcset="images/news-img-desktop-2@1x.webp 1x, images/news-img-desktop-2@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-2@1x.webp 1x, img/news-img-tablet-2@2x.webp 2x">
+                          srcset="images/news-img-tablet-2@1x.webp 1x, images/news-img-tablet-2@2x.webp 2x">
                         <source width="290" height="240" type="image/webp"
-                          srcset="img/news-img-mobile-2@1x.webp 1x, img/news-img-mobile-2@2x.webp 2x">
+                          srcset="images/news-img-mobile-2@1x.webp 1x, images/news-img-mobile-2@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-2@1x.jpg 1x, img/news-img-desktop-2@2x.jpg 2x">
+                          srcset="images/news-img-desktop-2@1x.jpg 1x, images/news-img-desktop-2@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-2@1x.jpg 1x, img/news-img-tablet-2@2x.jpg 2x">
-                        <img src="img/news-img-mobile-2@1x.jpg" srcset="img/news-img-mobile-2@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-2@1x.jpg 1x, images/news-img-tablet-2@2x.jpg 2x">
+                        <img src="images/news-img-mobile-2@1x.jpg" srcset="images/news-img-mobile-2@2x.jpg 2x" width="290"
                           height="240" alt="Побережье Тель-Авива. Израиль">
                       </picture>
                     </div>
@@ -446,26 +447,26 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-3@1x.webp 1x, img/news-img-desktop-3@2x.webp 2x">
+                          srcset="images/news-img-desktop-3@1x.webp 1x, images/news-img-desktop-3@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-3@1x.webp 1x, img/news-img-tablet-3@2x.webp 2x">
+                          srcset="images/news-img-tablet-3@1x.webp 1x, images/news-img-tablet-3@2x.webp 2x">
                         <source width="290" height="330" type="image/webp"
-                          srcset="img/news-img-mobile-3@1x.webp 1x, img/news-img-mobile-3@2x.webp 2x">
+                          srcset="images/news-img-mobile-3@1x.webp 1x, images/news-img-mobile-3@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-3@1x.jpg 1x, img/news-img-desktop-3@2x.jpg 2x">
+                          srcset="images/news-img-desktop-3@1x.jpg 1x, images/news-img-desktop-3@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-3@1x.jpg 1x, img/news-img-tablet-3@2x.jpg 2x">
-                        <img src="img/news-img-mobile-3@1x.jpg" srcset="img/news-img-mobile-3@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-3@1x.jpg 1x, images/news-img-tablet-3@2x.jpg 2x">
+                        <img src="images/news-img-mobile-3@1x.jpg" srcset="images/news-img-mobile-3@2x.jpg 2x" width="290"
                           height="330" alt="Руки девушки в красной кофточке со значком Волонтёр крупным планом">
                       </picture>
                     </div>
                     <div class="news__picture-big">
                       <picture>
                         <source media="(min-width: 1440px)" width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-3@1x.webp 1x, img/news-img-big-3@2x.webp 2x">
+                          srcset="images/news-img-big-3@1x.webp 1x, images/news-img-big-3@2x.webp 2x">
                         <source width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-3@1x.webp 1x, img/news-img-big-3@2x.webp 2x">
-                        <img src="img/news-img-big-3@1x.jpg" srcset="img/news-img-big-3@2x.jpg 2x" width="604"
+                          srcset="images/news-img-big-3@1x.webp 1x, images/news-img-big-3@2x.webp 2x">
+                        <img src="images/news-img-big-3@1x.jpg" srcset="images/news-img-big-3@2x.jpg 2x" width="604"
                           height="400" alt="Руки девушки в красной кофточке со значком Волонтёр крупным планом">
                       </picture>
                     </div>
@@ -486,16 +487,16 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-4@1x.webp 1x, img/news-img-desktop-4@2x.webp 2x">
+                          srcset="images/news-img-desktop-4@1x.webp 1x, images/news-img-desktop-4@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-4@1x.webp 1x, img/news-img-tablet-4@2x.webp 2x">
+                          srcset="images/news-img-tablet-4@1x.webp 1x, images/news-img-tablet-4@2x.webp 2x">
                         <source width="290" height="240" type="image/webp"
-                          srcset="img/news-img-mobile-4@1x.webp 1x, img/news-img-mobile-4@2x.webp 2x">
+                          srcset="images/news-img-mobile-4@1x.webp 1x, images/news-img-mobile-4@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-4@1x.jpg 1x, img/news-img-desktop-4@2x.jpg 2x">
+                          srcset="images/news-img-desktop-4@1x.jpg 1x, images/news-img-desktop-4@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-4@1x.jpg 1x, img/news-img-tablet-4@2x.jpg 2x">
-                        <img src="img/news-img-mobile-4@1x.jpg" srcset="img/news-img-mobile-4@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-4@1x.jpg 1x, images/news-img-tablet-4@2x.jpg 2x">
+                        <img src="images/news-img-mobile-4@1x.jpg" srcset="images/news-img-mobile-4@2x.jpg 2x" width="290"
                           height="240"
                           alt="Стол с пятью ноутбуками и несколькими жёсткими дисками. Руки двоих мужчин за ноутбуками. Вид сверху">
                       </picture>
@@ -520,26 +521,26 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-1@1x.webp 1x, img/news-img-desktop-1@2x.webp 2x">
+                          srcset="images/news-img-desktop-1@1x.webp 1x, images/news-img-desktop-1@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-1@1x.webp 1x, img/news-img-tablet-1@2x.webp 2x">
+                          srcset="images/news-img-tablet-1@1x.webp 1x, images/news-img-tablet-1@2x.webp 2x">
                         <source width="290" height="330" type="image/webp"
-                          srcset="img/news-img-mobile-1@1x.webp 1x, img/news-img-mobile-1@2x.webp 2x">
+                          srcset="images/news-img-mobile-1@1x.webp 1x, images/news-img-mobile-1@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-1@1x.jpg 1x, img/news-img-desktop-1@2x.jpg 2x">
+                          srcset="images/news-img-desktop-1@1x.jpg 1x, images/news-img-desktop-1@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-1@1x.jpg 1x, img/news-img-tablet-1@2x.jpg 2x">
-                        <img src="img/news-img-mobile-1@1x.jpg" srcset="img/news-img-mobile-1@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-1@1x.jpg 1x, images/news-img-tablet-1@2x.jpg 2x">
+                        <img src="images/news-img-mobile-1@1x.jpg" srcset="images/news-img-mobile-1@2x.jpg 2x" width="290"
                           height="330" alt="Студентка даёт интервью">
                       </picture>
                     </div>
                     <div class="news__picture-big">
                       <picture>
                         <source media="(min-width: 1440px)" width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
                         <source width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
-                        <img src="img/news-img-big-1@1x.jpg" srcset="img/news-img-big-1@2x.jpg 2x" width="604"
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
+                        <img src="images/news-img-big-1@1x.jpg" srcset="images/news-img-big-1@2x.jpg 2x" width="604"
                           height="400" alt="Студентка даёт интервью">
                       </picture>
                     </div>
@@ -560,16 +561,16 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-2@1x.webp 1x, img/news-img-desktop-2@2x.webp 2x">
+                          srcset="images/news-img-desktop-2@1x.webp 1x, images/news-img-desktop-2@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-2@1x.webp 1x, img/news-img-tablet-2@2x.webp 2x">
+                          srcset="images/news-img-tablet-2@1x.webp 1x, images/news-img-tablet-2@2x.webp 2x">
                         <source width="290" height="240" type="image/webp"
-                          srcset="img/news-img-mobile-2@1x.webp 1x, img/news-img-mobile-2@2x.webp 2x">
+                          srcset="images/news-img-mobile-2@1x.webp 1x, images/news-img-mobile-2@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-2@1x.jpg 1x, img/news-img-desktop-2@2x.jpg 2x">
+                          srcset="images/news-img-desktop-2@1x.jpg 1x, images/news-img-desktop-2@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-2@1x.jpg 1x, img/news-img-tablet-2@2x.jpg 2x">
-                        <img src="img/news-img-mobile-2@1x.jpg" srcset="img/news-img-mobile-2@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-2@1x.jpg 1x, images/news-img-tablet-2@2x.jpg 2x">
+                        <img src="images/news-img-mobile-2@1x.jpg" srcset="images/news-img-mobile-2@2x.jpg 2x" width="290"
                           height="240" alt="Побережье Тель-Авива. Израиль">
                       </picture>
                     </div>
@@ -591,26 +592,26 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-3@1x.webp 1x, img/news-img-desktop-3@2x.webp 2x">
+                          srcset="images/news-img-desktop-3@1x.webp 1x, images/news-img-desktop-3@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-3@1x.webp 1x, img/news-img-tablet-3@2x.webp 2x">
+                          srcset="images/news-img-tablet-3@1x.webp 1x, images/news-img-tablet-3@2x.webp 2x">
                         <source width="290" height="330" type="image/webp"
-                          srcset="img/news-img-mobile-3@1x.webp 1x, img/news-img-mobile-3@2x.webp 2x">
+                          srcset="images/news-img-mobile-3@1x.webp 1x, images/news-img-mobile-3@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-3@1x.jpg 1x, img/news-img-desktop-3@2x.jpg 2x">
+                          srcset="images/news-img-desktop-3@1x.jpg 1x, images/news-img-desktop-3@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-3@1x.jpg 1x, img/news-img-tablet-3@2x.jpg 2x">
-                        <img src="img/news-img-mobile-3@1x.jpg" srcset="img/news-img-mobile-3@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-3@1x.jpg 1x, images/news-img-tablet-3@2x.jpg 2x">
+                        <img src="images/news-img-mobile-3@1x.jpg" srcset="images/news-img-mobile-3@2x.jpg 2x" width="290"
                           height="330" alt="Руки девушки в красной кофточке со значком Волонтёр крупным планом">
                       </picture>
                     </div>
                     <div class="news__picture-big">
                       <picture>
                         <source media="(min-width: 1440px)" width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-3@1x.webp 1x, img/news-img-big-3@2x.webp 2x">
+                          srcset="images/news-img-big-3@1x.webp 1x, images/news-img-big-3@2x.webp 2x">
                         <source width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-3@1x.webp 1x, img/news-img-big-3@2x.webp 2x">
-                        <img src="img/news-img-big-3@1x.jpg" srcset="img/news-img-big-3@2x.jpg 2x" width="604"
+                          srcset="images/news-img-big-3@1x.webp 1x, images/news-img-big-3@2x.webp 2x">
+                        <img src="images/news-img-big-3@1x.jpg" srcset="images/news-img-big-3@2x.jpg 2x" width="604"
                           height="400" alt="Руки девушки в красной кофточке со значком Волонтёр крупным планом">
                       </picture>
                     </div>
@@ -631,16 +632,16 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-4@1x.webp 1x, img/news-img-desktop-4@2x.webp 2x">
+                          srcset="images/news-img-desktop-4@1x.webp 1x, images/news-img-desktop-4@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-4@1x.webp 1x, img/news-img-tablet-4@2x.webp 2x">
+                          srcset="images/news-img-tablet-4@1x.webp 1x, images/news-img-tablet-4@2x.webp 2x">
                         <source width="290" height="240" type="image/webp"
-                          srcset="img/news-img-mobile-4@1x.webp 1x, img/news-img-mobile-4@2x.webp 2x">
+                          srcset="images/news-img-mobile-4@1x.webp 1x, images/news-img-mobile-4@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-4@1x.jpg 1x, img/news-img-desktop-4@2x.jpg 2x">
+                          srcset="images/news-img-desktop-4@1x.jpg 1x, images/news-img-desktop-4@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-4@1x.jpg 1x, img/news-img-tablet-4@2x.jpg 2x">
-                        <img src="img/news-img-mobile-4@1x.jpg" srcset="img/news-img-mobile-4@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-4@1x.jpg 1x, images/news-img-tablet-4@2x.jpg 2x">
+                        <img src="images/news-img-mobile-4@1x.jpg" srcset="images/news-img-mobile-4@2x.jpg 2x" width="290"
                           height="240"
                           alt="Стол с пятью ноутбуками и несколькими жёсткими дисками. Руки двоих мужчин за ноутбуками. Вид сверху">
                       </picture>
@@ -665,26 +666,26 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-1@1x.webp 1x, img/news-img-desktop-1@2x.webp 2x">
+                          srcset="images/news-img-desktop-1@1x.webp 1x, images/news-img-desktop-1@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-1@1x.webp 1x, img/news-img-tablet-1@2x.webp 2x">
+                          srcset="images/news-img-tablet-1@1x.webp 1x, images/news-img-tablet-1@2x.webp 2x">
                         <source width="290" height="330" type="image/webp"
-                          srcset="img/news-img-mobile-1@1x.webp 1x, img/news-img-mobile-1@2x.webp 2x">
+                          srcset="images/news-img-mobile-1@1x.webp 1x, images/news-img-mobile-1@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-1@1x.jpg 1x, img/news-img-desktop-1@2x.jpg 2x">
+                          srcset="images/news-img-desktop-1@1x.jpg 1x, images/news-img-desktop-1@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-1@1x.jpg 1x, img/news-img-tablet-1@2x.jpg 2x">
-                        <img src="img/news-img-mobile-1@1x.jpg" srcset="img/news-img-mobile-1@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-1@1x.jpg 1x, images/news-img-tablet-1@2x.jpg 2x">
+                        <img src="images/news-img-mobile-1@1x.jpg" srcset="images/news-img-mobile-1@2x.jpg 2x" width="290"
                           height="330" alt="Студентка даёт интервью">
                       </picture>
                     </div>
                     <div class="news__picture-big">
                       <picture>
                         <source media="(min-width: 1440px)" width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
                         <source width="604" height="400" type="image/webp"
-                          srcset="img/news-img-big-1@1x.webp 1x, img/news-img-big-1@2x.webp 2x">
-                        <img src="img/news-img-big-1@1x.jpg" srcset="img/news-img-big-1@2x.jpg 2x" width="604"
+                          srcset="images/news-img-big-1@1x.webp 1x, images/news-img-big-1@2x.webp 2x">
+                        <img src="images/news-img-big-1@1x.jpg" srcset="images/news-img-big-1@2x.jpg 2x" width="604"
                           height="400" alt="Студентка даёт интервью">
                       </picture>
                     </div>
@@ -704,16 +705,16 @@
                     <div class="news__picture">
                       <picture>
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/webp"
-                          srcset="img/news-img-desktop-2@1x.webp 1x, img/news-img-desktop-2@2x.webp 2x">
+                          srcset="images/news-img-desktop-2@1x.webp 1x, images/news-img-desktop-2@2x.webp 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/webp"
-                          srcset="img/news-img-tablet-2@1x.webp 1x, img/news-img-tablet-2@2x.webp 2x">
+                          srcset="images/news-img-tablet-2@1x.webp 1x, images/news-img-tablet-2@2x.webp 2x">
                         <source width="290" height="240" type="image/webp"
-                          srcset="img/news-img-mobile-2@1x.webp 1x, img/news-img-mobile-2@2x.webp 2x">
+                          srcset="images/news-img-mobile-2@1x.webp 1x, images/news-img-mobile-2@2x.webp 2x">
                         <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg"
-                          srcset="img/news-img-desktop-2@1x.jpg 1x, img/news-img-desktop-2@2x.jpg 2x">
+                          srcset="images/news-img-desktop-2@1x.jpg 1x, images/news-img-desktop-2@2x.jpg 2x">
                         <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg"
-                          srcset="img/news-img-tablet-2@1x.jpg 1x, img/news-img-tablet-2@2x.jpg 2x">
-                        <img src="img/news-img-mobile-2@1x.jpg" srcset="img/news-img-mobile-2@2x.jpg 2x" width="290"
+                          srcset="images/news-img-tablet-2@1x.jpg 1x, images/news-img-tablet-2@2x.jpg 2x">
+                        <img src="images/news-img-mobile-2@1x.jpg" srcset="images/news-img-mobile-2@2x.jpg 2x" width="290"
                           height="240" alt="Побережье Тель-Авива. Израиль">
                       </picture>
                     </div>
@@ -819,12 +820,12 @@
                   <div class="reviews__picture">
                     <picture>
                       <source media="(min-width: 768px)" width="90" height="90" type="image/webp"
-                        srcset="img/avatar-1@1x.webp 1x, img/avatar-1@2x.webp 2x">
+                        srcset="images/avatar-1@1x.webp 1x, images/avatar-1@2x.webp 2x">
                       <source width="60" height="60" type="image/webp"
-                        srcset="img/avatar-mobile-1@1x.webp 1x, img/avatar-mobile-1@2x.webp 2x">
+                        srcset="images/avatar-mobile-1@1x.webp 1x, images/avatar-mobile-1@2x.webp 2x">
                       <source media="(min-width: 768px)" width="90" height="90" type="image/jpeg"
-                        srcset="img/avatar-1@1x.jpg 1x, img/avatar-1@2x.jpg 2x">
-                      <img src="img/avatar-mobile-1@1x.jpg" srcset="img/avatar-mobile-1@2x.jpg 2x" width="60"
+                        srcset="images/avatar-1@1x.jpg 1x, images/avatar-1@2x.jpg 2x">
+                      <img src="images/avatar-mobile-1@1x.jpg" srcset="images/avatar-mobile-1@2x.jpg 2x" width="60"
                         height="60" alt="Автор отзыва">
                     </picture>
                   </div>
@@ -849,12 +850,12 @@
                   <div class="reviews__picture">
                     <picture>
                       <source media="(min-width: 768px)" width="90" height="90" type="image/webp"
-                        srcset="img/avatar-2@1x.webp 1x, img/avatar-2@2x.webp 2x">
+                        srcset="images/avatar-2@1x.webp 1x, images/avatar-2@2x.webp 2x">
                       <source width="60" height="60" type="image/webp"
-                        srcset="img/avatar-mobile-2@1x.webp 1x, img/avatar-mobile-2@2x.webp 2x">
+                        srcset="images/avatar-mobile-2@1x.webp 1x, images/avatar-mobile-2@2x.webp 2x">
                       <source media="(min-width: 768px)" width="90" height="90" type="image/jpeg"
-                        srcset="img/avatar-2@1x.jpg 1x, img/avatar-2@2x.jpg 2x">
-                      <img src="img/avatar-mobile-2@1x.png" srcset="img/avatar-mobile-2@2x.jpg 2x" width="60"
+                        srcset="images/avatar-2@1x.jpg 1x, images/avatar-2@2x.jpg 2x">
+                      <img src="images/avatar-mobile-2@1x.png" srcset="images/avatar-mobile-2@2x.jpg 2x" width="60"
                         height="60" alt="Автор отзыва">
                     </picture>
                   </div>
@@ -896,16 +897,16 @@
           <div class="contacts__picture">
             <picture>
               <source media="(min-width: 1440px)" width="1240" height="486" type="image/webp"
-                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="678" height="500" type="image/webp"
-                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
               <source width="290" height="240" type="image/webp"
-                srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" width="1240" height="486" type="image/png"
-                srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+                srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="678" height="500" type="image/png"
-                srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-              <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="290" height="240"
+                srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+              <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="290" height="240"
                 alt="Карта проезда к главному офису компании">
             </picture>
           </div>
@@ -954,7 +955,7 @@
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
           <svg width="30" height="30">
-            <use href="/__spritemap#sprite-logo"></use>
+            <use href="icons/stack.svg#logo"></use>
           </svg>
         </div>
         <ul class="footer__menu-list">
@@ -999,7 +1000,7 @@
       </div>
     </footer>
   </div>
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="scripts/main.js"></script>
   <div class="body__modal-wrapper body__modal-wrapper--closed" tabindex="0">
     <div class="body__modal modal">
       <h2 class="modal__title" id="write-modal">Напишите нам</h2>

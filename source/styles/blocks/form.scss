@@ -56,12 +56,16 @@
 
 .form__select--closed {
   background-size: 16px 9px;
-  background-image: url("/__spritemap#sprite-popup-icon-form-view");
+  background-image: url("/icons/stack.svg#popup-icon-form");
 }
 
 .form__select--opened {
   background-size: 16px 16px;
-  background-image: url("/__spritemap#sprite-popup-icon-open-form-view");
+  background-image: url("/icons/stack.svg#popup-icon-open-form");
+}
+
+.form__agreement {
+  margin-bottom: 20px;
 }
 
 .form__agreement label {
@@ -70,17 +74,17 @@
   justify-content: left;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .form__label-agree {
   font-size: 12px;
   line-height: 1.17;
+  align-self: center;
 }
 
 .form__input-agree {
   appearance: none;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border: 1px solid var(--bg-second, #ffffff);
   border-radius: 2px;
@@ -102,7 +106,7 @@
 
 .form__input-agree:checked {
   background-color: var(--bg-accent, #000080);
-  background-image: url("/__spritemap#sprite-check-modal-icon-view");
+  background-image: url("/icons/stack.svg#check-modal-icon");
   background-size: 20px 18px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -124,7 +128,7 @@
   .form__tel-input,
   .form__message-input,
   .form__select {
-    width: 362px;
+    width: 350px;
   }
 
   .form__select {
@@ -133,10 +137,6 @@
 
   .form__message-input {
     height: 88px;
-  }
-
-  .form__agreement label{
-    margin-bottom: 40px;
   }
 
   .form__label-agree {

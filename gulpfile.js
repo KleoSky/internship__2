@@ -32,19 +32,20 @@ const PATHS_TO_STATIC = [
 ];
 let isDevelopment = true;
 
-export function processMarkup () {
+export function processMarkup() {
   return src(`${PATH_TO_SOURCE}**/*.html`)
     .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
     .pipe(dest(PATH_TO_DIST))
     .pipe(server.stream());
 }
 
-export function lintBem () {
+export function lintBem() {
   return src(`${PATH_TO_SOURCE}**/*.html`)
     .pipe(bemlinter());
 }
 
-export function processStyles () {
+export function processStyles() {
+  'node_modules/swiper/swiper.css'
   return src(`${PATH_TO_SOURCE}styles/*.scss`, { sourcemaps: isDevelopment })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -73,7 +74,7 @@ export function processStyles () {
     .pipe(server.stream());
 }
 
-export function processScripts () {
+export function processScripts() {
   const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
 
   return src(`${PATH_TO_SOURCE}scripts/*.js`)
@@ -90,7 +91,7 @@ export function processScripts () {
     .pipe(server.stream());
 }
 
-export function optimizeRaster () {
+export function optimizeRaster() {
   const RAW_DENSITY = 2;
   const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
 
@@ -118,24 +119,24 @@ export function optimizeRaster () {
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }
 
-export function optimizeVector () {
+export function optimizeVector() {
   return src([`${PATH_TO_RAW}**/*.svg`])
     .pipe(svgo())
     .pipe(dest(PATH_TO_SOURCE));
 }
 
-export function createStack () {
+export function createStack() {
   return src(`${PATH_TO_SOURCE}icons/**/*.svg`)
     .pipe(stacksvg())
     .pipe(dest(`${PATH_TO_DIST}icons`));
 }
 
-export function copyStatic () {
+export function copyStatic() {
   return src(PATHS_TO_STATIC, { base: PATH_TO_SOURCE })
     .pipe(dest(PATH_TO_DIST));
 }
 
-export function startServer () {
+export function startServer() {
   const serveStatic = PATHS_TO_STATIC
     .filter((path) => path.startsWith('!') === false)
     .map((path) => {
@@ -167,12 +168,12 @@ export function startServer () {
   watch(PATHS_TO_STATIC, series(reloadServer));
 }
 
-function reloadServer (done) {
+function reloadServer(done) {
   server.reload();
   done();
 }
 
-export function removeBuild (done) {
+export function removeBuild(done) {
   rmSync(PATH_TO_DIST, {
     force: true,
     recursive: true,
@@ -180,7 +181,7 @@ export function removeBuild (done) {
   done();
 }
 
-export function buildProd (done) {
+export function buildProd(done) {
   isDevelopment = false;
   series(
     removeBuild,
@@ -194,9 +195,8 @@ export function buildProd (done) {
   )(done);
 }
 
-export function runDev (done) {
+export function runDev(done) {
   series(
-    removeBuild,
     parallel(
       processMarkup,
       processStyles,
