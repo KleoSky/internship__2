@@ -74,6 +74,11 @@ export function processStyles() {
     .pipe(server.stream());
 }
 
+export function copySwiperStyles() {
+  return src('node_modules/swiper/swiper.css')
+    .pipe(dest(`${PATH_TO_DIST}styles`));
+}
+
 export function processScripts() {
   const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
 
@@ -188,6 +193,7 @@ export function buildProd(done) {
     parallel(
       processMarkup,
       processStyles,
+      copySwiperStyles,
       processScripts,
       createStack,
       copyStatic,
@@ -200,6 +206,7 @@ export function runDev(done) {
     parallel(
       processMarkup,
       processStyles,
+      copySwiperStyles,
       processScripts,
       createStack,
     ),
