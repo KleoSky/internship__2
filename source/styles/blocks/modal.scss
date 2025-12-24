@@ -54,11 +54,11 @@
 }
 
 .modal__form .form__select--closed {
-  background-image: url("/icons/stack.svg#popup-icon");
+  background-image: url("../../icons/stack.svg#popup-icon");
 }
 
 .modal__form .form__select--opened {
-  background-image: url("/icons/stack.svg#popup-icon-open");
+  background-image: url("../../icons/stack.svg#popup-icon-open");
 }
 
 .modal__form .form__agreement {
@@ -89,7 +89,7 @@
 
 .modal__form .form__input-agree:checked {
   background-color: var(--color-second, #ffffff);
-  background-image: url("/icons/stack.svg#check-icon");
+  background-image: url("../../icons/stack.svg#check-icon");
   border: 1px solid var(--color-second, #ffffff);
 }
 
@@ -198,7 +198,7 @@
     right: 30px;
     width: 22px;
     height: 22px;
-    mask: url("/icons/stack.svg#cross-icon") center / 18px 18px no-repeat;
+    mask: url("../../icons/stack.svg#cross-icon") center / 18px 18px no-repeat;
   }
 }
 

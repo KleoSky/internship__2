@@ -37,7 +37,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    mask: url("/icons/stack.svg#arrow-45deg-icon") center / 7px 7px no-repeat;
+    mask: url("../../icons/stack.svg#arrow-45deg-icon") center / 7px 7px no-repeat;
   }
 
   &:hover:not(:disabled) {

@@ -47,11 +47,11 @@
   }
 
   &--prev::before {
-    mask: url("/icons/stack.svg#arrow-left-icon") center / 10px 10px no-repeat;
+    mask: url("../../icons/stack.svg#arrow-left-icon") center / 10px 10px no-repeat;
   }
 
   &--next::before {
-    mask: url("/icons/stack.svg#arrow-right-icon") center / 10px 10px no-repeat;
+    mask: url("../../icons/stack.svg#arrow-right-icon") center / 10px 10px no-repeat;
   }
 
   &:hover:not(:disabled)::before,

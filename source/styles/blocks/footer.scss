@@ -150,19 +150,19 @@
 .footer__social-link--vk::before {
   width: 12px;
   height: 7px;
-  mask: url("/icons/stack.svg#vk-icon") center / 12px 7px no-repeat;
+  mask: url("../../icons/stack.svg#vk-icon") center / 12px 7px no-repeat;
 }
 
 .footer__social-link--ok::before {
   width: 7px;
   height: 12px;
-  mask: url("/icons/stack.svg#ok-icon") center / 7px 12px no-repeat;
+  mask: url("../../icons/stack.svg#ok-icon") center / 7px 12px no-repeat;
 }
 
 .footer__social-link--rd::before {
   width: 11px;
   height: 11px;
-  mask: url("/icons/stack.svg#rd-icon") center / 11px 11px no-repeat;
+  mask: url("../../icons/stack.svg#rd-icon") center / 11px 11px no-repeat;
 }
 
 // Добавить класс .footer__social-link--disabled для отключения доступности
@@ -242,19 +242,19 @@
   .footer__social-link--vk::before {
     width: 16px;
     height: 9px;
-    mask: url("/icons/stack.svg#vk-icon") center / 16px 9px no-repeat;
+    mask: url("../../icons/stack.svg#vk-icon") center / 16px 9px no-repeat;
   }
 
   .footer__social-link--ok::before {
     width: 10px;
     height: 16px;
-    mask: url("/icons/stack.svg#ok-icon") center / 10px 16px no-repeat;
+    mask: url("../../icons/stack.svg#ok-icon") center / 10px 16px no-repeat;
   }
 
   .footer__social-link--rd::before {
     width: 15px;
     height: 15px;
-    mask: url("/icons/stack.svg#rd-icon") center / 15px 15px no-repeat;
+    mask: url("../../icons/stack.svg#rd-icon") center / 15px 15px no-repeat;
   }
 }
 

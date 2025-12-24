@@ -54,14 +54,14 @@
   &--closed::after {
     width: 16px;
     height: 8px;
-    mask: url("/icons/stack.svg#burger-icon") center / 16px 8px no-repeat;
+    mask: url("../../icons/stack.svg#burger-icon") center / 16px 8px no-repeat;
   }
 
   &--opened::after {
     width: 16px;
     height: 16px;
     background-color: var(--bg-accent, #000080);
-    mask: url("/icons/stack.svg#cross-icon") center / 16px 16px no-repeat;
+    mask: url("../../icons/stack.svg#cross-icon") center / 16px 16px no-repeat;
     left: 253px;
   }
 

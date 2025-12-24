@@ -46,7 +46,7 @@
     display: block;
     background-color: var(--bg-second, #ffffff);
     position: absolute;
-    mask: url("/icons/stack.svg#corner-icon") center / 10px 10px no-repeat;
+    mask: url("../../icons/stack.svg#corner-icon") center / 10px 10px no-repeat;
     top: 18px;
     left: 75px;
     transform: rotate(-90deg);
@@ -116,7 +116,7 @@
     &::after {
       width: 20px;
       height: 20px;
-      mask: url("/icons/stack.svg#corner-icon") center / 20px 20px no-repeat;
+      mask: url("../../icons/stack.svg#corner-icon") center / 20px 20px no-repeat;
       top: 20px;
       left: 100px;
     }

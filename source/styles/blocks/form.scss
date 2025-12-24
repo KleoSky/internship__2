@@ -56,12 +56,12 @@
 
 .form__select--closed {
   background-size: 16px 9px;
-  background-image: url("/icons/stack.svg#popup-icon-form");
+  background-image: url("../../icons/stack.svg#popup-icon-form");
 }
 
 .form__select--opened {
   background-size: 16px 16px;
-  background-image: url("/icons/stack.svg#popup-icon-open-form");
+  background-image: url("../../icons/stack.svg#popup-icon-open-form");
 }
 
 .form__agreement {
@@ -106,7 +106,7 @@
 
 .form__input-agree:checked {
   background-color: var(--bg-accent, #000080);
-  background-image: url("/icons/stack.svg#check-modal-icon");
+  background-image: url("../../icons/stack.svg#check-modal-icon");
   background-size: 20px 18px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
